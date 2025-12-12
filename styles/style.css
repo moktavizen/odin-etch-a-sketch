@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  background-image: url("../images/Melamine-wood-005.png");
+}
+
+.frame {
+  width: 680px;
+  height: 680px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+}
+
+.container {
+  width: 480px;
+  height: 480px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.pixel {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+}
