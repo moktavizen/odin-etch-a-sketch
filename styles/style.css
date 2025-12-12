@@ -4,6 +4,9 @@ body {
   align-items: center;
   height: 100svh;
   background-image: url("../images/Melamine-wood-005.png");
+  font-family: serif;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .frame {
@@ -16,15 +19,21 @@ body {
   border-radius: 32px;
 }
 
+.branding {
+  position: absolute;
+  color: gold;
+}
+
 .container {
   width: 480px;
   height: 480px;
-  background-color: white;
-  border-radius: 16px;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pixel {
-  width: 30px;
-  height: 30px;
-  background-color: green;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
 }
