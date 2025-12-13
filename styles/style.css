@@ -17,10 +17,12 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 32px;
+  position: relative;
 }
 
 .branding {
   position: absolute;
+  top: 0;
   color: gold;
 }
 
