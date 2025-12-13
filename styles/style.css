@@ -36,8 +36,8 @@ body {
 }
 
 .pixel {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: 1px solid gray;
 }
 
@@ -47,6 +47,7 @@ body {
   border-radius: 100px;
   width: 100px;
   height: 100px;
+  background-color: white;
 }
 
 .left {
