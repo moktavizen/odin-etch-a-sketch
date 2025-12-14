@@ -39,6 +39,8 @@ frame.addEventListener("change", (ev) => {
   }
 });
 
+let isRGB = false;
+
 frame.addEventListener("click", (ev) => {
   const target = ev.target;
 
@@ -47,13 +49,30 @@ frame.addEventListener("click", (ev) => {
       removeGrid();
       renderGrid();
       break;
+    case "rgb-button":
+      if (isRGB) {
+        isRGB = false;
+        target.textContent = "RGB: Off";
+      } else {
+        isRGB = true;
+        target.textContent = "RGB: On";
+      }
+      break;
   }
 });
+
+const getRandomRGB = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  return "rgb(" + r + "," + g + "," + b + ")";
+};
 
 gridContainer.addEventListener("mouseover", (ev) => {
   const target = ev.target;
 
   if (target.className === "grid") {
-    target.style.backgroundColor = "black";
+    target.style.backgroundColor = isRGB ? getRandomRGB() : "black";
   }
 });
