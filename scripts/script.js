@@ -39,6 +39,17 @@ frame.addEventListener("change", (ev) => {
   }
 });
 
+frame.addEventListener("click", (ev) => {
+  const target = ev.target;
+
+  switch (target.id) {
+    case "clear-button":
+      removeGrid();
+      renderGrid();
+      break;
+  }
+});
+
 gridContainer.addEventListener("mouseover", (ev) => {
   const target = ev.target;
 
