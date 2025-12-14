@@ -10,6 +10,7 @@ const renderGrid = () => {
   for (let i = 0; i < totalGridCount; i++) {
     const div = document.createElement("div");
     div.classList.add("grid");
+    div.id = `grid-${i}`;
     div.style.width = `${gridWidth}px`;
     div.style.height = `${gridWidth}px`;
     gridContainer.appendChild(div);
@@ -35,5 +36,13 @@ frame.addEventListener("change", (ev) => {
         renderGrid();
       }
       break;
+  }
+});
+
+gridContainer.addEventListener("mouseover", (ev) => {
+  const target = ev.target;
+
+  if (target.className === "grid") {
+    target.style.backgroundColor = "black";
   }
 });

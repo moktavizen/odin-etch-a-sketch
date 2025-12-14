@@ -35,10 +35,6 @@ body {
   flex-wrap: wrap;
 }
 
-.grid {
-  border: 1px solid gray;
-}
-
 .control {
   position: absolute;
   bottom: 7px;
