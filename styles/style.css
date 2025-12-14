@@ -35,9 +35,7 @@ body {
   flex-wrap: wrap;
 }
 
-.pixel {
-  width: 30px;
-  height: 30px;
+.grid {
   border: 1px solid gray;
 }
 
@@ -50,17 +48,20 @@ body {
   background-color: white;
 }
 
-.left {
+#left {
   left: 7px;
 }
 
-.right {
+#right {
   right: 7px;
 }
 
-.width {
+.grid-form {
   position: absolute;
   bottom: 23px;
+}
+
+#grid-input {
   font-size: 12pt;
   border-radius: 100px;
   padding: 16px;

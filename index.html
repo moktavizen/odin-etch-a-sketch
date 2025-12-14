@@ -12,9 +12,17 @@
     <div class="frame">
       <h1 class="branding">Etch A Sketch</h1>
       <div class="container"></div>
-      <button class="control left">RGB: Off</button>
-      <input type="number" placeholder="Width: 1-100" class="width" />
-      <button class="control right">Clear</button>
+      <button class="control" id="left">RGB: Off</button>
+      <form action="#" class="grid-form">
+        <input
+          type="number"
+          value="16"
+          max="100"
+          placeholder="Width: 1-100"
+          id="grid-input"
+        />
+      </form>
+      <button class="control" id="right">Clear</button>
     </div>
   </body>
 </html>
