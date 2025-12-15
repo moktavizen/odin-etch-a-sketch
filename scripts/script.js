@@ -36,12 +36,17 @@ frame.addEventListener("change", (ev) => {
 });
 
 let isRGB = false;
+const gridForm = document.querySelector(".grid-form");
 
 frame.addEventListener("click", (ev) => {
   const target = ev.target;
 
   switch (target.id) {
     case "clear-button":
+      if (gridInput.value > sideGridCountLimit) {
+        gridForm.requestSubmit();
+        break;
+      }
       removeGrid();
       renderGrid();
       break;
