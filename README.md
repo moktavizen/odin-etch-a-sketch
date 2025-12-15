@@ -2,7 +2,7 @@
 
 This project will apply the following skills:
 
-- HTML:
+- HTML
     - Elements and Tags
     - Boilerplate
     - Lists
