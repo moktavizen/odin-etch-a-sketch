@@ -29,13 +29,9 @@ const removeGrid = () => {
 frame.addEventListener("change", (ev) => {
   const target = ev.target;
 
-  switch (target.id) {
-    case "grid-input":
-      if (target.value <= sideGridCountLimit) {
-        removeGrid();
-        renderGrid();
-      }
-      break;
+  if (target.id === "grid-input" && target.value <= sideGridCountLimit) {
+    removeGrid();
+    renderGrid();
   }
 });
 
