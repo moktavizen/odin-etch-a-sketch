@@ -10,8 +10,7 @@ body {
 }
 
 .frame {
-  width: 680px;
-  height: 680px;
+  padding: 100px;
   background-color: red;
   display: flex;
   justify-content: center;
