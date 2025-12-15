@@ -74,6 +74,12 @@ gridContainer.addEventListener("mouseover", (ev) => {
   const target = ev.target;
 
   if (target.className === "grid") {
-    target.style.backgroundColor = isRGB ? getRandomRGB() : "black";
+    const style = target.style;
+
+    style.backgroundColor = isRGB ? getRandomRGB() : "black";
+
+    if (style.opacity < 1) {
+      style.opacity = +style.opacity + 0.2;
+    }
   }
 });
