@@ -42,14 +42,6 @@ frame.addEventListener("click", (ev) => {
   const target = ev.target;
 
   switch (target.id) {
-    case "clear-button":
-      if (gridInput.value > sideGridCountLimit) {
-        gridForm.requestSubmit();
-        break;
-      }
-      removeGrid();
-      renderGrid();
-      break;
     case "rgb-button":
       if (isRGB) {
         isRGB = false;
@@ -58,6 +50,14 @@ frame.addEventListener("click", (ev) => {
         isRGB = true;
         target.textContent = "RGB: On";
       }
+      break;
+    case "clear-button":
+      if (gridInput.value > sideGridCountLimit) {
+        gridForm.requestSubmit();
+        break;
+      }
+      removeGrid();
+      renderGrid();
       break;
   }
 });
