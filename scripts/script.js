@@ -10,7 +10,6 @@ const renderGrid = () => {
   for (let i = 0; i < totalGridCount; i++) {
     const div = document.createElement("div");
     div.classList.add("grid");
-    div.id = `grid-${i}`;
     div.style.width = `${gridWidth}px`;
     div.style.height = `${gridWidth}px`;
     gridContainer.appendChild(div);
