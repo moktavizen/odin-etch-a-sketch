@@ -78,7 +78,7 @@ gridContainer.addEventListener("mouseover", (ev) => {
     style.backgroundColor = isRGB ? getRandomRGB() : "black";
 
     if (style.opacity < 1) {
-      style.opacity = +style.opacity + 0.2;
+      style.opacity = Number(style.opacity) + 0.2;
     }
   }
 });
